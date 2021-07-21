@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/black">
+
+        <TextView
+            android:id="@+id/batting2_total_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:gravity="center_vertical"
+            android:text="TOTAL"
+            android:background="#3A3A3A"
+            />
+
+        <TextView
+            android:id="@+id/batting2_total"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/batting2_cons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/batting2_total_text"
+            >
+
+        <TextView
+            android:id="@+id/batting2_batsman_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="Batsman"
+            />
+
+
+        <TextView
+            android:id="@+id/batting2_runs"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/batting2_balls"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="R"
+            />
+
+        <TextView
+            android:id="@+id/batting2_balls"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/batting2_fours"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="B"
+            />
+
+        <TextView
+            android:id="@+id/batting2_fours"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/batting2_sixes"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="4s"
+            />
+
+        <TextView
+            android:id="@+id/batting2_sixes"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="6s"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/scorecard_batting2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/batting2_cons_layout"
+            />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/bowling2_cons_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/scorecard_batting2"
+            android:layout_marginTop="5dp"
+            >
+
+
+            <TextView
+                android:id="@+id/bowling2_bowler_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Bowler"
+                />
+
+            <TextView
+                android:id="@+id/bowling2_overs"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/bowling2_runs_given"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="O"
+                />
+
+            <TextView
+                android:id="@+id/bowling2_runs_given"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/bowling2_wickets"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="R"
+                />
+
+            <TextView
+                android:id="@+id/bowling2_wickets"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/bowling2_economy"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="W"
+                />
+
+            <TextView
+                android:id="@+id/bowling2_economy"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:text="E"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/scorecard_bowling2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bowling2_cons_layout"
+            />
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

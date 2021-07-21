@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/header_team"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="45dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:text="TEAM"
+        />
+
+
+    <TextView
+        android:id="@+id/header_matches"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="@+id/header_team"
+        app:layout_constraintStart_toEndOf="@id/header_team"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="M"
+        />
+
+    <TextView
+        android:id="@+id/header_won"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="@+id/header_team"
+        app:layout_constraintStart_toEndOf="@id/header_matches"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="W"
+        />
+
+    <TextView
+        android:id="@+id/header_lost"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="@+id/header_team"
+        app:layout_constraintStart_toEndOf="@id/header_won"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="L"
+        />
+
+    <TextView
+        android:id="@+id/header_points"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="@+id/header_team"
+        app:layout_constraintStart_toEndOf="@id/header_lost"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="P"
+        />
+
+    <TextView
+        android:id="@+id/header_nrr"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        app:layout_constraintTop_toTopOf="@+id/header_team"
+        app:layout_constraintStart_toEndOf="@id/header_points"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:text="NRR"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/standings_rec_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/header_team"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="#3A3A3A"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

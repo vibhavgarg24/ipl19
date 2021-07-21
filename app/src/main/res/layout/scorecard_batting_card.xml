@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    android:backgroundTint="#3A3A3A"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/scorecard_batsman_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/scorecard_runs"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/scorecard_balls"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/scorecard_balls"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/scorecard_fours"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/scorecard_fours"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/scorecard_sixes"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/scorecard_sixes"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

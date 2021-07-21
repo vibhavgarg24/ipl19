@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp"
+    android:backgroundTint="#3A3A3A"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/table_team_name"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            />
+
+
+        <TextView
+            android:id="@+id/table_team_matches"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_team_name"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/table_team_won"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_team_matches"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/table_team_lost"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_team_won"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/table_team_points"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_team_lost"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/table_team_nrr"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/table_team_points"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
